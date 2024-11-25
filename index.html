@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIA Insurance Plans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <img src="image_file/seller.jpg" alt="AIA Logo" class="logo">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#plans">แผนประกัน</a></li>
+                <li><a href="#news">ข่าวสาร</a></li>
+                <li><a href="#contact">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <h1 id="hero-title"></h1>
+        <p id="hero-description"></p>
+        <button id="cta-button" class="cta-button"></button>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="plans-section">
+        <h2>แผนประกันของเรา</h2>
+        <div class="plans-container">
+            <div class="plan-box" onclick="loadText('base_file/products/product1.txt', 'Product')">
+                <img src="image_file/product1.jpg" alt="Product 1">
+                <h3>ประกันชีวิต</h3>
+                <p>คุ้มครองตลอดชีพ</p>
+            </div>
+            <div class="plan-box" onclick="loadText('base_file/products/product2.txt', 'Product')">
+                <img src="image_file/product2.jpg" alt="Product 2">
+                <h3>ประกันสุขภาพ</h3>
+                <p>ครอบคลุมการรักษาพยาบาล</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news-section">
+        <h2>ข่าวสาร</h2>
+        <div class="news-container">
+            <div class="news-box" onclick="loadText('base_file/news/news1.txt', 'News')">
+                <img src="image_file/news1.jpg" alt="News 1">
+                <h3>โปรโมชั่น</h3>
+            </div>
+            <div class="news-box" onclick="loadText('base_file/news/news2.txt', 'News')">
+                <img src="image_file/news2.jpg" alt="News 2">
+                <h3>ประกันสุขภาพ</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seller Section -->
+    <section id="contact" class="seller-section">
+        <h2>ติดต่อเรา</h2>
+        <div id="seller-info">
+            <pre id="seller-details"></pre>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
